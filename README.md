@@ -8,7 +8,7 @@
 ---
 
 #### templates   
-index.html - 초기 페이지(현재 blockchain의 block상황을 보여준다.
-mine.html  - mining을 진행하여 채굴된 block의 정보를 보여준다.
-transactions_new.html  - transaction을 추가할 수 있다. (mining 시 transaction 포함됨)
-pending.html    - transactions_new에서 추가되었지만 mining되지않은 transaction을 보여준다.
+1. index.html - 초기 페이지(현재 blockchain의 block상황을 보여준다.
+2. mine.html  - mining을 진행하여 채굴된 block의 정보를 보여준다.
+3. transactions_new.html  - transaction을 추가할 수 있다. (mining 시 transaction 포함됨)
+4. pending.html    - transactions_new에서 추가되었지만 mining되지않은 transaction을 보여준다.
