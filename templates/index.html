@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+      <style>
+      table {
+        border : 1px solid blue;
+        border-collapse : collapse;
+      }
+      td, th {
+        border : 1px dotted green;
+        text-align : left;
+      }
+      th {
+        width : 1px;
+      }
+
+
+      </style>
+    </head>
+   <body>
+      <table>
+        <thead><tr><th>index</th><th>timestamp</th><th>transactions</th><th>proof</th><th>previous_hash</th></tr></thead>
+        {% for list in chain %}
+        <tbody><tr><td>{{ list.index }}</td><td>{{ list.timestamp}}</td><td>{{ list.transactions}}</td><td>{{ list.proof}}</td><td>{{ list.previous_hash}}</td></tr></tbody>
+        {% endfor %}
+
+
+
+
+      </table>
+        <form action="http://localhost:5000/mine" >
+          <input type="submit" value="mine">
+        </form>
+        <form action="http://localhost:5000/transactions/new">
+          <input type="submit" value="new_transaction">
+        </form>
+   </body>
+</html>
