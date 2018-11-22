@@ -2,15 +2,12 @@ from flask import Flask,request,jsonify
 #import json
 from time import time
 #from textwrap import dedent
-from uuid import uuid4
 from flask import render_template
 from flask import redirect,url_for
 from blockchain import Blockchain
 
 
 app = Flask(__name__)
-
-node_identifier = str(uuid4()).replace('-','')
 
 blockchain = Blockchain()
 @app.route('/')
