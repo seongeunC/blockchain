@@ -4,7 +4,6 @@ from time import time
 import urllib.parse
 import requests
 
-####### block generation & its principle
 
 class Blockchain():
 	# initialize the blockchain info
@@ -39,9 +38,6 @@ class Blockchain():
 		)
 		return self.last_block['index'] + 1
 
-	def register_node(self, address):
-		parsed_url = urlparse(address)
-		self.nodes.add(parsed_url.netloc) # netloc attribute! network lockation
 
 	def valid_chain(self,chain):
 		last_block = chain[0]
